@@ -95,10 +95,3 @@ Future<String> decodeString(String meow) async {
   return utf8.decode(bytes);
 }
 
-void _printnum(List<int> bytes) {
-  var buffer = StringBuffer();
-  for(int byte in bytes) {
-    buffer.write(byte.toRadixString(2).padLeft(8, '0'));
-  }
-  print(buffer.toString());
-}

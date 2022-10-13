@@ -1,5 +1,3 @@
-import 'package:binary/binary.dart';
-
 Map<String, int> _inverse(Map<int,String> f) {
  return f.map( (k, v) => MapEntry(v, k) );
 }
